@@ -1,0 +1,26 @@
+﻿<Window x:Class="ula22._10._24.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ula22._10._24"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <DockPanel Background="#F0F0F0">
+            <Button x:Name="btnGoLeft" DockPanel.Dock="Left" Margin="5" Width="100" Height="35" Background="#FF6A00" Foreground="White" FontWeight="Bold">Lewo</Button>
+            <Button x:Name="btnGoRight" DockPanel.Dock="Right" Margin="5" Width="100" Height="35" Background="#FF6A00" Foreground="White" FontWeight="Bold">Prawo</Button>
+            <ComboBox x:Name="cbbImages" Margin="5" Height="35" Background="DarkRed" Foreground="Black"  FontSize="14" FontWeight="Bold" 
+                      VerticalContentAlignment="Center"
+                      BorderBrush="#FF6A00" BorderThickness="2" 
+                      Padding="5">
+                
+            </ComboBox>
+        </DockPanel>
+        <Image Grid.Row="1" x:Name="imgDisplay" Margin="10"></Image>
+    </Grid>
+</Window>
